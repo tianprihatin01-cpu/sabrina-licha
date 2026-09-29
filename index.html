@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Untuk Sabrina Licha ❤️</title>
+
+<style>
+
+/* =========================
+   BASIC
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: "Segoe UI", sans-serif;
+    background:#120b13;
+    color:white;
+    overflow:hidden;
+}
+
+/* =========================
+   BACKGROUND
+========================= */
+
+#stars{
+    position:fixed;
+    inset:0;
+    z-index:-2;
+    background:
+        radial-gradient(circle at 20% 20%, #51243e 0%, transparent 25%),
+        radial-gradient(circle at 80% 80%, #3b1d3b 0%, transparent 25%),
+        linear-gradient(135deg,#120b13,#21101d,#120b13);
+}
+
+/* =========================
+   PARTICLES
+========================= */
+
+.particle{
+    position:fixed;
+    bottom:-40px;
+    pointer-events:none;
+    animation:floatUp linear forwards;
+    z-index:5;
+}
+
+@keyframes floatUp{
+    0%{
+        transform:translateY(0) rotate(0);
+        opacity:0;
+    }
+
+    10%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.screen{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.card{
+    width:100%;
+    max-width:480px;
+    height:90vh;
+    max-height:780px;
+    overflow-y:auto;
+
+    padding:35px 25px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+        0 20px 80px rgba(0,0,0,.5);
+
+    scrollbar-width:none;
+}
+
+.card::-webkit-scrollbar{
+    display:none;
+}
+
+/* =========================
+   PAGES
+========================= */
+
+.page{
+    display:none;
+    min-height:100%;
+    animation:pageIn .8s ease;
+}
+
+.page.active{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+@keyframes pageIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px) scale(.97);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.small{
+    font-size:13px;
+    letter-spacing:3px;
+    opacity:.6;
+    text-transform:uppercase;
+}
+
+h1{
+    font-size:42px;
+    margin:15px 0;
+}
+
+h2{
+    font-size:30px;
+    margin:15px 0 20px;
+}
+
+p{
+    line-height:1.9;
+    color:#f4e9ef;
+}
+
+.center{
+    text-align:center;
+}
+
+/* =========================
+   TYPING
+========================= */
+
+.typing{
+    min-height:70px;
+    font-size:20px;
+    color:#ffd5e5;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+button{
+    margin-top:30px;
+
+    border:none;
+    padding:14px 27px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        135deg,
+        #e85d91,
+        #a94072
+    );
+
+    color:white;
+    font-size:15px;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 10px 30px rgba(220,70,130,.25);
+
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-3px) scale(1.03);
+}
+
+button:active{
+    transform:scale(.96);
+}
+
+/* =========================
+   ICON
+========================= */
+
+.icon{
+    font-size:65px;
+    margin-bottom:15px;
+
+    animation:
+        floating 3s ease-in-out infinite;
+}
+
+@keyframes floating{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+}
+
+/* =========================
+   PHOTO
+========================= */
+
+.photo-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin-top:20px;
+}
+
+.photo{
+    height:170px;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6b304c,
+            #2d1727
+        );
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#f5d9e5;
+
+    overflow:hidden;
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline{
+    margin-top:20px;
+    border-left:2px solid #e85d91;
+    padding-left:20px;
+}
+
+.event{
+    margin-bottom:25px;
+    position:relative;
+}
+
+.event::before{
+    content:"❤️";
+
+    position:absolute;
+    left:-34px;
+    top:0;
+
+    font-size:14px;
+}
+
+.event h3{
+    color:#ffb5ce;
+    margin-bottom:5px;
+}
+
+/* =========================
+   QUOTE
+========================= */
+
+.quote{
+    margin:25px 0;
+
+    padding:20px;
+
+    border-left:3px solid #e85d91;
+
+    background:rgba(255,255,255,.05);
+
+    border-radius:0 15px 15px 0;
+
+    font-style:italic;
+}
+
+/* =========================
+   SECRET
+========================= */
+
+.secret{
+    display:none;
+
+    margin-top:20px;
+
+    padding:20px;
+
+    background:rgba(232,93,145,.12);
+
+    border-radius:20px;
+
+    animation:secretIn .8s ease;
+}
+
+.secret.show{
+    display:block;
+}
+
+@keyframes secretIn{
+
+    from{
+        opacity:0;
+        transform:scale(.8);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+/* =========================
+   FINAL HEART
+========================= */
+
+.big-heart{
+    font-size:100px;
+
+    animation:
+        heartbeat 1.3s infinite;
+}
+
+@keyframes heartbeat{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.2);
+    }
+
+}
+
+/* =========================
+   MUSIC
+========================= */
+
+.music{
+    position:fixed;
+
+    top:15px;
+    right:15px;
+
+    width:45px;
+    height:45px;
+
+    margin:0;
+    padding:0;
+
+    border-radius:50%;
+
+    z-index:20;
+
+    font-size:18px;
+}
+
+/* =========================
+   PROGRESS
+========================= */
+
+.progress{
+    position:fixed;
+
+    bottom:15px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-size:12px;
+
+    opacity:.5;
+
+    z-index:20;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:500px){
+
+    .card{
+        height:88vh;
+        padding:30px 20px;
+    }
+
+    h1{
+        font-size:34px;
+    }
+
+    h2{
+        font-size:27px;
+    }
+
+    .typing{
+        font-size:18px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div id="stars"></div>
+
+<!-- MUSIC -->
+<audio id="music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music" onclick="toggleMusic()" id="musicBtn">
+    🎵
+</button>
+
+
+<div class="screen">
+
+<div class="card">
+
+
+<!-- =========================
+     PAGE 1
+========================= -->
+
+<section class="page active">
+
+    <div class="center">
+
+        <div class="icon">
+            🌷
+        </div>
+
+        <div class="small">
+            sebuah halaman kecil
+        </div>
+
+        <h1>
+            Untuk Sabrina Licha
+        </h1>
+
+        <div
+            class="typing"
+            id="typing">
+        </div>
+
+        <p>
+            Ada sesuatu yang ingin aku
+            sampaikan ke kamu.
+            <br><br>
+            Tapi kali ini,
+            biar kamu baca perlahan.
+        </p>
+
+        <button onclick="nextPage()">
+            Mulai perjalanan 💌
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PAGE 2
+========================= -->
+
+<section class="page">
+
+    <div class="center">
+
+        <div class="icon">
+            ✨
+        </div>
+
+        <div class="small">
+            halaman pertama
+        </div>
+
+        <h2>
+            Dari sekian banyak orang...
+        </h2>
+
+        <p>
+            Ada banyak orang yang datang
+            dan pergi dalam hidup kita.
+            <br><br>
+
+            Tapi ada beberapa orang
+            yang entah bagaimana,
+            akhirnya terasa berbeda.
+            <br><br>
+
+            Dan buat aku,
+            salah satunya adalah kamu.
+        </p>
+
+        <div class="quote">
+            "Kadang kita nggak mencari seseorang,
+            tapi tiba-tiba seseorang itu
+            menjadi bagian paling berarti."
+        </div>
+
+        <button onclick="nextPage()">
+            Lanjut → 🌷
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PAGE 3
+========================= -->
+
+<section class="page">
+
+    <div class="center">
+
+        <div class="icon">
+            🌸
+        </div>
+
+        <div class="small">
+            tentang kamu
+        </div>
+
+        <h2>
+            Sabrina Licha
+        </h2>
+
+        <p>
+            Mungkin aku nggak selalu bilang,
+            tapi ada banyak hal kecil
+            dari kamu yang aku suka.
+            <br><br>
+
+            Cara kamu cerita.
+            Cara kamu bercanda.
+            Cara kamu hadir.
+            Bahkan hal-hal sederhana
+            yang mungkin menurut kamu
+            nggak berarti apa-apa.
+            <br><br>
+
+            Tapi justru hal-hal kecil itu
+            yang sering aku ingat.
+        </p>
+
+        <button onclick="nextPage()">
+            Ada satu hal lagi... 💗
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PAGE 4
+========================= -->
+
+<section class="page">
+
+    <div class="center">
+
+        <div class="icon">
+            📸
+        </div>
+
+        <div class="small">
+            beberapa kenangan
+        </div>
+
+        <h2>
+            Tentang Kita
+        </h2>
+
+        <p>
+            Beberapa momen mungkin
+            terlihat sederhana.
+            <br><br>
+
+            Tapi suatu hari nanti,
+            mungkin justru momen-momen kecil
+            seperti ini yang paling kita rindukan.
+        </p>
+
+        <div class="photo-grid">
+
+            <div class="photo">
+                <img src="foto1.jpg">
+            </div>
+
+            <div class="photo">
+                <img src="foto2.jpg">
+            </div>
+
+            <div class="photo">
+                <img src="foto3.jpg">
+            </div>
+
+            <div class="photo">
+                <img src="foto4.jpg">
+            </div>
+
+        </div>
+
+        <button onclick="nextPage()">
+            Lihat cerita kita → 🕰️
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PAGE 5
+========================= -->
+
+<section class="page">
+
+    <div>
+
+        <div class="icon center">
+            🕰️
+        </div>
+
+        <div class="small center">
+            perjalanan
+        </div>
+
+        <h2 class="center">
+            Cerita Kita
+        </h2>
+
+        <div class="timeline">
+
+            <div class="event">
+
+                <h3>
+                    Awal
+                </h3>
+
+                <p>
+                    Di suatu titik,
+                    dua orang yang sebelumnya
+                    nggak tahu akan menjadi
+                    seberapa penting satu sama lain,
+                    akhirnya bertemu.
+                </p>
+
+            </div>
+
+
+            <div class="event">
+
+                <h3>
+                    Bertumbuh
+                </h3>
+
+                <p>
+                    Kita mulai mengenal
+                    satu sama lain.
+                    Ada tawa, cerita,
+                    perbedaan, dan banyak hal
+                    yang kita lewati.
+                </p>
+
+            </div>
+
+
+            <div class="event">
+
+                <h3>
+                    Sampai sekarang
+                </h3>
+
+                <p>
+                    Dan ternyata,
+                    setelah semua yang dilewati,
+                    aku masih ingin melihat
+                    cerita ini terus berjalan.
+                </p>
+
+            </div>
+
+        </div>
+
+        <button onclick="nextPage()">
+            Lanjut → 🌙
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PAGE 6
+========================= -->
+
+<section class="page">
+
+    <div class="center">
+
+        <div class="icon">
+            🌙
+        </div>
+
+        <div class="small">
+            tentang jarak
+        </div>
+
+        <h2>
+            LDR
+        </h2>
+
+        <p>
+            Jarak memang membuat beberapa
+            hal menjadi berbeda.
+            <br><br>
+
+            Kita nggak selalu bisa bertemu.
+            Nggak selalu bisa berada
+            di tempat yang sama.
+            <br><br>
+
+            Tapi ternyata,
+            dekat bukan selalu soal jarak.
+            <br><br>
+
+            Karena ada seseorang yang
+            tetap terasa dekat,
+            meskipun sedang jauh.
+        </p>
+
+        <div class="quote">
+            "Jauh tempatnya,
+            bukan berarti jauh rasanya."
+        </div>
+
+        <button onclick="nextPage()">
+            Masih ada satu surat... 💌
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PAGE 7
+========================= -->
+
+<section class="page">
+
+    <div class="center">
+
+        <div class="icon">
+            💌
+        </div>
+
+        <div class="small">
+            sebuah surat
+        </div>
+
+        <h2>
+            Untuk kamu
+        </h2>
+
+        <p>
+            Licha,
+            <br><br>
+
+            Aku mungkin bukan orang
+            yang selalu bisa menjelaskan
+            semuanya dengan sempurna.
+            <br><br>
+
+            Tapi aku ingin kamu tahu
+            kalau aku menghargai
+            setiap waktu yang kita punya.
+            <br><br>
+
+            Terima kasih karena sudah
+            menjadi bagian dari perjalanan aku.
+            <br><br>
+
+            Aku nggak tahu apa yang akan
+            terjadi di halaman-halaman
+            berikutnya.
+            <br><br>
+
+            Tapi selama masih ada kesempatan,
+            aku ingin terus menulisnya
+            bersama kamu.
+        </p>
+
+        <button onclick="nextPage()">
+            Ada sesuatu yang tersembunyi 🔐
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PAGE 8
+========================= -->
+
+<section class="page">
+
+    <div class="center">
+
+        <div class="icon">
+            🔐
+        </div>
+
+        <div class="small">
+            secret message
+        </div>
+
+        <h2>
+            Jangan dibuka...
+        </h2>
+
+        <p>
+            Serius.
+            <br>
+            Jangan pencet tombolnya.
+        </p>
+
+        <button onclick="openSecret()">
+            Jangan buka 🤨
+        </button>
+
+        <div
+            class="secret"
+            id="secret">
+
+            <h3>
+                🤍 Ketahuan.
+            </h3>
+
+            <br>
+
+            <p>
+                Sebenernya aku cuma mau bilang...
+                <br><br>
+
+                <b>
+                aku sayang kamu.
+                </b>
+
+                <br><br>
+
+                Sesederhana itu.
+                Tapi rasanya nggak pernah
+                sesederhana itu.
+            </p>
+
+        </div>
+
+        <button
+            onclick="nextPage()"
+            id="secretNext"
+            style="display:none">
+
+            Oke, lanjut ❤️
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PAGE 9
+========================= -->
+
+<section class="page">
+
+    <div class="center">
+
+        <div class="icon">
+            🌌
+        </div>
+
+        <div class="small">
+            kalau suatu hari
+        </div>
+
+        <h2>
+            Kita melihat kembali
+        </h2>
+
+        <p>
+            Kalau suatu hari nanti
+            kita melihat kembali
+            perjalanan ini...
+            <br><br>
+
+            aku harap kita bisa tersenyum
+            dan berkata:
+        </p>
+
+        <div class="quote">
+
+            "Ternyata kita sudah melewati
+            banyak hal bersama."
+
+        </div>
+
+        <p>
+            Dan semoga saat itu,
+            kita masih punya banyak
+            cerita baru untuk ditulis.
+        </p>
+
+        <button onclick="nextPage()">
+            Halaman terakhir... ❤️
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PAGE 10
+========================= -->
+
+<section class="page">
+
+    <div class="center">
+
+        <div class="big-heart">
+            ❤️
+        </div>
+
+        <div class="small">
+            halaman terakhir
+        </div>
+
+        <h2>
+            Sabrina Licha
+        </h2>
+
+        <p>
+            Kalau kamu sudah sampai
+            di halaman ini,
+            berarti kamu sudah membaca
+            semuanya.
+            <br><br>
+
+            Tapi ada satu hal yang
+            sebenarnya ingin aku bilang
+            dari awal.
+            <br><br>
+
+            <b>
+            Terima kasih sudah hadir.
+            </b>
+
+            <br><br>
+
+            Aku nggak tahu akan ada
+            berapa banyak halaman
+            setelah ini.
+            <br><br>
+
+            Tapi kalau boleh memilih...
+            <br><br>
+
+            <b>
+            aku ingin nama kamu
+            tetap ada di dalamnya.
+            </b>
+
+            <br><br>
+
+            🌷
+            <br>
+
+            <b>
+            Love you, Licha.
+            </b>
+
+        </p>
+
+        <button onclick="restart()">
+            ↻ Baca lagi
+        </button>
+
+    </div>
+
+</section>
+
+
+</div>
+</div>
+
+
+<div
+    class="progress"
+    id="progress">
+    1 / 10
+</div>
+
+
+<script>
+
+/* =========================
+   PAGE SYSTEM
+========================= */
+
+let currentPage = 0;
+
+const pages =
+document.querySelectorAll(".page");
+
+const progress =
+document.getElementById("progress");
+
+
+function nextPage(){
+
+    if(currentPage < pages.length - 1){
+
+        pages[currentPage]
+        .classList.remove("active");
+
+        currentPage++;
+
+        pages[currentPage]
+        .classList.add("active");
+
+        progress.innerText =
+        (currentPage + 1)
+        + " / "
+        + pages.length;
+
+    }
+
+}
+
+
+/* =========================
+   RESTART
+========================= */
+
+function restart(){
+
+    pages[currentPage]
+    .classList.remove("active");
+
+    currentPage = 0;
+
+    pages[0]
+    .classList.add("active");
+
+    progress.innerText = "1 / 10";
+
+}
+
+
+/* =========================
+   TYPING
+========================= */
+
+const typingText =
+"ada sesuatu yang ingin aku sampaikan khusus untuk kamu...";
+
+let typingIndex = 0;
+
+function typeWriter(){
+
+    if(
+        typingIndex <
+        typingText.length
+    ){
+
+        document.getElementById("typing")
+        .innerHTML +=
+        typingText.charAt(typingIndex);
+
+        typingIndex++;
+
+        setTimeout(
+            typeWriter,
+            55
+        );
+
+    }
+
+}
+
+typeWriter();
+
+
+/* =========================
+   FLOATING PARTICLES
+========================= */
+
+function createParticle(){
+
+    const particle =
+    document.createElement("div");
+
+    particle.className =
+    "particle";
+
+    const items = [
+        "❤️",
+        "💗",
+        "💖",
+        "💕",
+        "✨",
+        "🌸",
+        "🌷",
+        "✦"
+    ];
+
+    particle.innerHTML =
+    items[
+        Math.floor(
+            Math.random()
+            * items.length
+        )
+    ];
+
+    particle.style.left =
+    Math.random() * 100 + "vw";
+
+    particle.style.fontSize =
+    12 + Math.random() * 22 + "px";
+
+    particle.style.animationDuration =
+    5 + Math.random() * 5 + "s";
+
+    document.body.appendChild(
+        particle
+    );
+
+    setTimeout(
+        () => particle.remove(),
+        10000
+    );
+
+}
+
+setInterval(
+    createParticle,
+    500
+);
+
+
+/* =========================
+   SECRET MESSAGE
+========================= */
+
+function openSecret(){
+
+    document
+    .getElementById("secret")
+    .classList.add("show");
+
+    document
+    .getElementById("secretNext")
+    .style.display = "inline-block";
+
+}
+
+
+/* =========================
+   MUSIC
+========================= */
+
+let musicPlaying = false;
+
+function toggleMusic(){
+
+    const music =
+    document.getElementById("music");
+
+    const button =
+    document.getElementById("musicBtn");
+
+    if(!musicPlaying){
+
+        music.play();
+
+        musicPlaying = true;
+
+        button.innerHTML = "🔊";
+
+    }else{
+
+        music.pause();
+
+        musicPlaying = false;
+
+        button.innerHTML = "🎵";
+
+    }
+
+}
+
+
+/* =========================
+   START MUSIC AFTER FIRST CLICK
+==============
