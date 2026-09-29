@@ -7,11 +7,6 @@
 <title>Untuk Sabrina Licha ❤️</title>
 
 <style>
-
-/* =========================
-   BASIC
-========================= */
-
 *{
     margin:0;
     padding:0;
@@ -23,30 +18,24 @@ html{
 }
 
 body{
-    font-family: "Segoe UI", sans-serif;
+    font-family:"Segoe UI",sans-serif;
     background:#120b13;
     color:white;
     overflow:hidden;
 }
 
-/* =========================
-   BACKGROUND
-========================= */
-
+/* BACKGROUND */
 #stars{
     position:fixed;
     inset:0;
     z-index:-2;
     background:
-        radial-gradient(circle at 20% 20%, #51243e 0%, transparent 25%),
-        radial-gradient(circle at 80% 80%, #3b1d3b 0%, transparent 25%),
+        radial-gradient(circle at 20% 20%,#51243e 0%,transparent 25%),
+        radial-gradient(circle at 80% 80%,#3b1d3b 0%,transparent 25%),
         linear-gradient(135deg,#120b13,#21101d,#120b13);
 }
 
-/* =========================
-   PARTICLES
-========================= */
-
+/* PARTICLES */
 .particle{
     position:fixed;
     bottom:-40px;
@@ -60,21 +49,14 @@ body{
         transform:translateY(0) rotate(0);
         opacity:0;
     }
-
-    10%{
-        opacity:1;
-    }
-
+    10%{opacity:1;}
     100%{
         transform:translateY(-110vh) rotate(360deg);
         opacity:0;
     }
 }
 
-/* =========================
-   MAIN
-========================= */
-
+/* MAIN */
 .screen{
     width:100%;
     height:100vh;
@@ -90,19 +72,12 @@ body{
     height:90vh;
     max-height:780px;
     overflow-y:auto;
-
     padding:35px 25px;
-
     border-radius:30px;
-
     background:rgba(255,255,255,.08);
     border:1px solid rgba(255,255,255,.15);
-
     backdrop-filter:blur(15px);
-
-    box-shadow:
-        0 20px 80px rgba(0,0,0,.5);
-
+    box-shadow:0 20px 80px rgba(0,0,0,.5);
     scrollbar-width:none;
 }
 
@@ -110,10 +85,7 @@ body{
     display:none;
 }
 
-/* =========================
-   PAGES
-========================= */
-
+/* PAGES */
 .page{
     display:none;
     min-height:100%;
@@ -127,23 +99,17 @@ body{
 }
 
 @keyframes pageIn{
-
     from{
         opacity:0;
         transform:translateY(30px) scale(.97);
     }
-
     to{
         opacity:1;
         transform:translateY(0) scale(1);
     }
-
 }
 
-/* =========================
-   TEXT
-========================= */
-
+/* TEXT */
 .small{
     font-size:13px;
     letter-spacing:3px;
@@ -170,42 +136,23 @@ p{
     text-align:center;
 }
 
-/* =========================
-   TYPING
-========================= */
-
 .typing{
     min-height:70px;
     font-size:20px;
     color:#ffd5e5;
 }
 
-/* =========================
-   BUTTON
-========================= */
-
+/* BUTTON */
 button{
     margin-top:30px;
-
     border:none;
     padding:14px 27px;
-
     border-radius:50px;
-
-    background:linear-gradient(
-        135deg,
-        #e85d91,
-        #a94072
-    );
-
+    background:linear-gradient(135deg,#e85d91,#a94072);
     color:white;
     font-size:15px;
-
     cursor:pointer;
-
-    box-shadow:
-        0 10px 30px rgba(220,70,130,.25);
-
+    box-shadow:0 10px 30px rgba(220,70,130,.25);
     transition:.3s;
 }
 
@@ -217,34 +164,19 @@ button:active{
     transform:scale(.96);
 }
 
-/* =========================
-   ICON
-========================= */
-
+/* ICON */
 .icon{
     font-size:65px;
     margin-bottom:15px;
-
-    animation:
-        floating 3s ease-in-out infinite;
+    animation:floating 3s ease-in-out infinite;
 }
 
 @keyframes floating{
-
-    0%,100%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-10px);
-    }
-
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
 }
 
-/* =========================
-   PHOTO
-========================= */
-
+/* PHOTO */
 .photo-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -254,22 +186,11 @@ button:active{
 
 .photo{
     height:170px;
-
     border-radius:20px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #6b304c,
-            #2d1727
-        );
-
+    background:linear-gradient(135deg,#6b304c,#2d1727);
     display:flex;
     align-items:center;
     justify-content:center;
-
-    color:#f5d9e5;
-
     overflow:hidden;
 }
 
@@ -279,10 +200,7 @@ button:active{
     object-fit:cover;
 }
 
-/* =========================
-   TIMELINE
-========================= */
-
+/* TIMELINE */
 .timeline{
     margin-top:20px;
     border-left:2px solid #e85d91;
@@ -296,11 +214,9 @@ button:active{
 
 .event::before{
     content:"❤️";
-
     position:absolute;
     left:-34px;
     top:0;
-
     font-size:14px;
 }
 
@@ -309,39 +225,23 @@ button:active{
     margin-bottom:5px;
 }
 
-/* =========================
-   QUOTE
-========================= */
-
+/* QUOTE */
 .quote{
     margin:25px 0;
-
     padding:20px;
-
     border-left:3px solid #e85d91;
-
     background:rgba(255,255,255,.05);
-
     border-radius:0 15px 15px 0;
-
     font-style:italic;
 }
 
-/* =========================
-   SECRET
-========================= */
-
+/* SECRET */
 .secret{
     display:none;
-
     margin-top:20px;
-
     padding:20px;
-
     background:rgba(232,93,145,.12);
-
     border-radius:20px;
-
     animation:secretIn .8s ease;
 }
 
@@ -350,90 +250,54 @@ button:active{
 }
 
 @keyframes secretIn{
-
     from{
         opacity:0;
         transform:scale(.8);
     }
-
     to{
         opacity:1;
         transform:scale(1);
     }
-
 }
 
-/* =========================
-   FINAL HEART
-========================= */
-
+/* FINAL HEART */
 .big-heart{
     font-size:100px;
-
-    animation:
-        heartbeat 1.3s infinite;
+    animation:heartbeat 1.3s infinite;
 }
 
 @keyframes heartbeat{
-
-    0%,100%{
-        transform:scale(1);
-    }
-
-    50%{
-        transform:scale(1.2);
-    }
-
+    0%,100%{transform:scale(1);}
+    50%{transform:scale(1.2);}
 }
 
-/* =========================
-   MUSIC
-========================= */
-
+/* MUSIC */
 .music{
     position:fixed;
-
     top:15px;
     right:15px;
-
     width:45px;
     height:45px;
-
     margin:0;
     padding:0;
-
     border-radius:50%;
-
     z-index:20;
-
     font-size:18px;
 }
 
-/* =========================
-   PROGRESS
-========================= */
-
+/* PROGRESS */
 .progress{
     position:fixed;
-
     bottom:15px;
     left:50%;
-
     transform:translateX(-50%);
-
     font-size:12px;
-
     opacity:.5;
-
     z-index:20;
 }
 
-/* =========================
-   MOBILE
-========================= */
-
+/* MOBILE */
 @media(max-width:500px){
-
     .card{
         height:88vh;
         padding:30px 20px;
@@ -450,12 +314,9 @@ button:active{
     .typing{
         font-size:18px;
     }
-
 }
-
 </style>
 </head>
-
 
 <body>
 
@@ -470,23 +331,14 @@ button:active{
     🎵
 </button>
 
-
 <div class="screen">
-
 <div class="card">
 
-
-<!-- =========================
-     PAGE 1
-========================= -->
-
+<!-- PAGE 1 -->
 <section class="page active">
-
     <div class="center">
 
-        <div class="icon">
-            🌷
-        </div>
+        <div class="icon">🌷</div>
 
         <div class="small">
             sebuah halaman kecil
@@ -496,10 +348,7 @@ button:active{
             Untuk Sabrina Licha
         </h1>
 
-        <div
-            class="typing"
-            id="typing">
-        </div>
+        <div class="typing" id="typing"></div>
 
         <p>
             Ada sesuatu yang ingin aku
@@ -514,21 +363,13 @@ button:active{
         </button>
 
     </div>
-
 </section>
 
-
-<!-- =========================
-     PAGE 2
-========================= -->
-
+<!-- PAGE 2 -->
 <section class="page">
-
     <div class="center">
 
-        <div class="icon">
-            ✨
-        </div>
+        <div class="icon">✨</div>
 
         <div class="small">
             halaman pertama
@@ -563,21 +404,13 @@ button:active{
         </button>
 
     </div>
-
 </section>
 
-
-<!-- =========================
-     PAGE 3
-========================= -->
-
+<!-- PAGE 3 -->
 <section class="page">
-
     <div class="center">
 
-        <div class="icon">
-            🌸
-        </div>
+        <div class="icon">🌸</div>
 
         <div class="small">
             tentang kamu
@@ -610,21 +443,13 @@ button:active{
         </button>
 
     </div>
-
 </section>
 
-
-<!-- =========================
-     PAGE 4
-========================= -->
-
+<!-- PAGE 4 -->
 <section class="page">
-
     <div class="center">
 
-        <div class="icon">
-            📸
-        </div>
+        <div class="icon">📸</div>
 
         <div class="small">
             beberapa kenangan
@@ -647,19 +472,19 @@ button:active{
         <div class="photo-grid">
 
             <div class="photo">
-                <img src="foto1.jpg">
+                <img src="foto1.jpg" alt="Foto 1">
             </div>
 
             <div class="photo">
-                <img src="foto2.jpg">
+                <img src="foto2.jpg" alt="Foto 2">
             </div>
 
             <div class="photo">
-                <img src="foto3.jpg">
+                <img src="foto3.jpg" alt="Foto 3">
             </div>
 
             <div class="photo">
-                <img src="foto4.jpg">
+                <img src="foto4.jpg" alt="Foto 4">
             </div>
 
         </div>
@@ -669,21 +494,13 @@ button:active{
         </button>
 
     </div>
-
 </section>
 
-
-<!-- =========================
-     PAGE 5
-========================= -->
-
+<!-- PAGE 5 -->
 <section class="page">
-
     <div>
 
-        <div class="icon center">
-            🕰️
-        </div>
+        <div class="icon center">🕰️</div>
 
         <div class="small center">
             perjalanan
@@ -696,11 +513,7 @@ button:active{
         <div class="timeline">
 
             <div class="event">
-
-                <h3>
-                    Awal
-                </h3>
-
+                <h3>Awal</h3>
                 <p>
                     Di suatu titik,
                     dua orang yang sebelumnya
@@ -708,16 +521,10 @@ button:active{
                     seberapa penting satu sama lain,
                     akhirnya bertemu.
                 </p>
-
             </div>
 
-
             <div class="event">
-
-                <h3>
-                    Bertumbuh
-                </h3>
-
+                <h3>Bertumbuh</h3>
                 <p>
                     Kita mulai mengenal
                     satu sama lain.
@@ -725,23 +532,16 @@ button:active{
                     perbedaan, dan banyak hal
                     yang kita lewati.
                 </p>
-
             </div>
 
-
             <div class="event">
-
-                <h3>
-                    Sampai sekarang
-                </h3>
-
+                <h3>Sampai sekarang</h3>
                 <p>
                     Dan ternyata,
                     setelah semua yang dilewati,
                     aku masih ingin melihat
                     cerita ini terus berjalan.
                 </p>
-
             </div>
 
         </div>
@@ -751,21 +551,13 @@ button:active{
         </button>
 
     </div>
-
 </section>
 
-
-<!-- =========================
-     PAGE 6
-========================= -->
-
+<!-- PAGE 6 -->
 <section class="page">
-
     <div class="center">
 
-        <div class="icon">
-            🌙
-        </div>
+        <div class="icon">🌙</div>
 
         <div class="small">
             tentang jarak
@@ -804,21 +596,13 @@ button:active{
         </button>
 
     </div>
-
 </section>
 
-
-<!-- =========================
-     PAGE 7
-========================= -->
-
+<!-- PAGE 7 -->
 <section class="page">
-
     <div class="center">
 
-        <div class="icon">
-            💌
-        </div>
+        <div class="icon">💌</div>
 
         <div class="small">
             sebuah surat
@@ -861,21 +645,13 @@ button:active{
         </button>
 
     </div>
-
 </section>
 
-
-<!-- =========================
-     PAGE 8
-========================= -->
-
+<!-- PAGE 8 -->
 <section class="page">
-
     <div class="center">
 
-        <div class="icon">
-            🔐
-        </div>
+        <div class="icon">🔐</div>
 
         <div class="small">
             secret message
@@ -895,9 +671,7 @@ button:active{
             Jangan buka 🤨
         </button>
 
-        <div
-            class="secret"
-            id="secret">
+        <div class="secret" id="secret">
 
             <h3>
                 🤍 Ketahuan.
@@ -910,7 +684,7 @@ button:active{
                 <br><br>
 
                 <b>
-                aku sayang kamu.
+                    aku sayang kamu.
                 </b>
 
                 <br><br>
@@ -932,21 +706,13 @@ button:active{
         </button>
 
     </div>
-
 </section>
 
-
-<!-- =========================
-     PAGE 9
-========================= -->
-
+<!-- PAGE 9 -->
 <section class="page">
-
     <div class="center">
 
-        <div class="icon">
-            🌌
-        </div>
+        <div class="icon">🌌</div>
 
         <div class="small">
             kalau suatu hari
@@ -967,10 +733,8 @@ button:active{
         </p>
 
         <div class="quote">
-
             "Ternyata kita sudah melewati
             banyak hal bersama."
-
         </div>
 
         <p>
@@ -984,16 +748,10 @@ button:active{
         </button>
 
     </div>
-
 </section>
 
-
-<!-- =========================
-     PAGE 10
-========================= -->
-
+<!-- PAGE 10 -->
 <section class="page">
-
     <div class="center">
 
         <div class="big-heart">
@@ -1021,7 +779,7 @@ button:active{
             <br><br>
 
             <b>
-            Terima kasih sudah hadir.
+                Terima kasih sudah hadir.
             </b>
 
             <br><br>
@@ -1035,8 +793,8 @@ button:active{
             <br><br>
 
             <b>
-            aku ingin nama kamu
-            tetap ada di dalamnya.
+                aku ingin nama kamu
+                tetap ada di dalamnya.
             </b>
 
             <br><br>
@@ -1045,9 +803,8 @@ button:active{
             <br>
 
             <b>
-            Love you, Licha.
+                Love you, Licha.
             </b>
-
         </p>
 
         <button onclick="restart()">
@@ -1055,20 +812,14 @@ button:active{
         </button>
 
     </div>
-
 </section>
 
-
 </div>
 </div>
 
-
-<div
-    class="progress"
-    id="progress">
+<div class="progress" id="progress">
     1 / 10
 </div>
-
 
 <script>
 
@@ -1078,32 +829,24 @@ button:active{
 
 let currentPage = 0;
 
-const pages =
-document.querySelectorAll(".page");
-
-const progress =
-document.getElementById("progress");
-
+const pages = document.querySelectorAll(".page");
+const progress = document.getElementById("progress");
 
 function nextPage(){
 
     if(currentPage < pages.length - 1){
 
-        pages[currentPage]
-        .classList.remove("active");
+        pages[currentPage].classList.remove("active");
 
         currentPage++;
 
-        pages[currentPage]
-        .classList.add("active");
+        pages[currentPage].classList.add("active");
 
         progress.innerText =
-        (currentPage + 1)
-        + " / "
-        + pages.length;
+            (currentPage + 1) + " / " + pages.length;
 
+        startMusic();
     }
-
 }
 
 
@@ -1113,16 +856,13 @@ function nextPage(){
 
 function restart(){
 
-    pages[currentPage]
-    .classList.remove("active");
+    pages[currentPage].classList.remove("active");
 
     currentPage = 0;
 
-    pages[0]
-    .classList.add("active");
+    pages[0].classList.add("active");
 
     progress.innerText = "1 / 10";
-
 }
 
 
@@ -1137,24 +877,15 @@ let typingIndex = 0;
 
 function typeWriter(){
 
-    if(
-        typingIndex <
-        typingText.length
-    ){
+    if(typingIndex < typingText.length){
 
-        document.getElementById("typing")
-        .innerHTML +=
-        typingText.charAt(typingIndex);
+        document.getElementById("typing").innerHTML +=
+            typingText.charAt(typingIndex);
 
         typingIndex++;
 
-        setTimeout(
-            typeWriter,
-            55
-        );
-
+        setTimeout(typeWriter,55);
     }
-
 }
 
 typeWriter();
@@ -1166,11 +897,9 @@ typeWriter();
 
 function createParticle(){
 
-    const particle =
-    document.createElement("div");
+    const particle = document.createElement("div");
 
-    particle.className =
-    "particle";
+    particle.className = "particle";
 
     const items = [
         "❤️",
@@ -1184,37 +913,26 @@ function createParticle(){
     ];
 
     particle.innerHTML =
-    items[
-        Math.floor(
-            Math.random()
-            * items.length
-        )
-    ];
+        items[Math.floor(Math.random() * items.length)];
 
     particle.style.left =
-    Math.random() * 100 + "vw";
+        Math.random() * 100 + "vw";
 
     particle.style.fontSize =
-    12 + Math.random() * 22 + "px";
+        12 + Math.random() * 22 + "px";
 
     particle.style.animationDuration =
-    5 + Math.random() * 5 + "s";
+        5 + Math.random() * 5 + "s";
 
-    document.body.appendChild(
-        particle
-    );
+    document.body.appendChild(particle);
 
     setTimeout(
         () => particle.remove(),
         10000
     );
-
 }
 
-setInterval(
-    createParticle,
-    500
-);
+setInterval(createParticle,500);
 
 
 /* =========================
@@ -1224,13 +942,12 @@ setInterval(
 function openSecret(){
 
     document
-    .getElementById("secret")
-    .classList.add("show");
+        .getElementById("secret")
+        .classList.add("show");
 
     document
-    .getElementById("secretNext")
-    .style.display = "inline-block";
-
+        .getElementById("secretNext")
+        .style.display = "inline-block";
 }
 
 
@@ -1240,21 +957,43 @@ function openSecret(){
 
 let musicPlaying = false;
 
-function toggleMusic(){
-
-    const music =
+const music =
     document.getElementById("music");
 
-    const button =
+const musicBtn =
     document.getElementById("musicBtn");
+
+
+function startMusic(){
 
     if(!musicPlaying){
 
-        music.play();
+        music.play()
+        .then(() => {
 
-        musicPlaying = true;
+            musicPlaying = true;
+            musicBtn.innerHTML = "🔊";
 
-        button.innerHTML = "🔊";
+        })
+        .catch(() => {
+            console.log("Musik menunggu izin browser.");
+        });
+
+    }
+}
+
+
+function toggleMusic(){
+
+    if(!musicPlaying){
+
+        music.play()
+        .then(() => {
+
+            musicPlaying = true;
+            musicBtn.innerHTML = "🔊";
+
+        });
 
     }else{
 
@@ -1262,13 +1001,11 @@ function toggleMusic(){
 
         musicPlaying = false;
 
-        button.innerHTML = "🎵";
-
+        musicBtn.innerHTML = "🎵";
     }
-
 }
 
+</script>
 
-/* =========================
-   START MUSIC AFTER FIRST CLICK
-==============
+</body>
+   </html>
